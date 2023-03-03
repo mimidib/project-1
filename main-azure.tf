@@ -8,5 +8,4 @@ resource "azuread_user" "user-mimi" {
   user_principal_name = "MDib@hashicorp.com"
   display_name        = "Mimi Dib"
   mail_nickname       = "MDib"
-  password            = "DummyP@ss123!"
 }

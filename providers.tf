@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/azuread"
       version = "2.36.0"
     }
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "3.46.0"
+    }
     aws = {
       source  = "hashicorp/aws"
       version = "4.57.0"
@@ -12,6 +16,10 @@ terraform {
 }
 
 provider "azuread" {
+  # Configuration options
+}
+
+provider "azurerm" {
   # Configuration options
 }
 

@@ -21,6 +21,9 @@ provider "azuread" {
 
 provider "azurerm" {
   # Configuration options
+  features {
+
+  }
 }
 
 provider "aws" {

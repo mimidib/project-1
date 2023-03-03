@@ -5,6 +5,10 @@ resource "aws_iam_user" "user-classmates" {
   tags = {
     tag-key = "DEV-22-classmates"
   }
+
+  depends_on = [
+    aws_s3_bucket.DEV-22-bucket
+  ]
 }
 
 resource "aws_s3_bucket" "DEV-22-bucket" {
@@ -15,4 +19,7 @@ resource "aws_s3_bucket" "DEV-22-bucket" {
     Name        = "DEV-22"
     Environment = "Dev"
   }
+  depends_on = [
+    azuread_user.user-mimi
+  ]
 }
